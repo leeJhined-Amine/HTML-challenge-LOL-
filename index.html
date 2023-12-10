@@ -3,6 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>My 1st Website!!!</title>
+        <link rel="stylesheet" href="chall.css">
 </head>
 <body>
     <header> 
@@ -21,10 +22,10 @@
                         <li> Fiora (can beat anyone when played good)
                             <a href="https://www.op.gg/champions/Fiora/build">Build & Runes</a>
                         </li>
-                        <li> Irelia (same as fiora)
-                            <a href="https://www.op.gg/champions/Irelia/build">Build & Runes</a>
+                        <li class="Irelia" id="otp"> Irelia (same as fiora)
+                            <a href="https://www.op.gg/champions/Irelia/build" class="irelink">Build & Runes</a>
                         </li>
-                        <li> Camille (manage the waves well and you win everylane)
+                        <li id="Camille"> Camille (manage the waves well and you'll win everylane)
                             <a href="https://www.op.gg/champions/Camille/build">Build & Runes</a>
                         </li>
                     </ol>
@@ -64,9 +65,9 @@
                             <a href="https://www.op.gg/champions/Vayne/build">Build & Runes</a>
                         </li>
                     </ol>
-                <li>Support
-                    <ol>
-                        <li>Senna (Stack and go outrange everyone)
+                    <li>Support
+                        <ol>
+                            <li>Senna (Stack and go outrange everyone)
                             <a href="https://www.op.gg/champions/Senna/build/">Build & Runes</a>
                         </li> 
                         <li>Rakan (very strong in teamgihts)
@@ -76,35 +77,51 @@
                 </li>
             </ul>
         </nav>
-
+        
     </section>
+    <aside>
+        <img src="https://cdn-icons-png.flaticon.com/512/3625/3625060.png" alt="nothing" width="30" height="30" id="lamp" />
+        <h4 id="tips">Tips</h4>
+        <ul>
+            <li>
+                Irelia: you should play with your passive. For hard matchups, play around opponent's cooldowns
+            </li>
+            <li>
+                Camille: with camille, wave managment is key, check this video that explain it very well
+                <a href="https://www.youtube.com/watch?v=ewlAqdKderc">Guide</a>
+            </li>
+            <li>
+                Syndra: inlane, you should poke as much as possible, if u don't its ok, you outscale everyone anyways.
+            </li>
+        </ul>
+    </aside>
     <section> 
         <article> 
             <h4>Here Are some League of Legends tips that you SHOULD consider</h4>
-            <p>As u may know, there are 2 importants "Win conditions" in the game, macro and micro, macro is more imortant since it's the way of playing in the map, and that will obviously affect you're game play more that micro, micro means mechanics, the way you play the champion</p>
+            <p>As u may know, there are 2 importants "Win conditions" in the game, macro and micro, macro is more imortant since it's the way of playing in the map, and that will obviously affect you're gameplay more than micro, micro means mechanics, the way you play the champion</p>
         </article>
-        <form>
+        <form class="server">
             <label for="Ingame Name">Ingame Name:</label>
             <input type="text" name="Ingame Name" />  <br/>
             <P>Server:</P>
                 <div>
-                    <p>EUW</p>
                     <input type="checkbox" name="EUW" /> 
+                    <p>EUW</p>
                 </div>
                 <div>
-                    <p>EUNE</p>
                     <input type="checkbox" name="EUNE" />
+                    <p>EUNE</p>
                 </div>
                 <div>
-                    <p>NA</p>
                     <input type="checkbox" name="NA" /> 
+                    <p>NA</p>
                 </div>
                 <div>
-                    <p>KR</p>
                     <input type="checkbox" name="KR" />
+                    <p>KR</p>
                 </div>
-            <input type="button" value="Valid"
-           </form> 
+            <input type="button" value="Valid"/>
+            </form> 
     </section>
     <footer>
        <p>If you're wondering, my ign is 'leejhined', currently in emerald 3</p>
